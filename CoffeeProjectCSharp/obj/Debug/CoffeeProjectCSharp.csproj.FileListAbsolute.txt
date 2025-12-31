@@ -1,0 +1,14 @@
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.exe.config
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.exe
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.pdb
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.csproj.AssemblyReference.cache
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Form1.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Properties.Resources.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.csproj.GenerateResource.cache
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.csproj.CoreCompileInputs.cache
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.exe
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.pdb
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.exe.config
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Mainframe.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Register.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Account.resources

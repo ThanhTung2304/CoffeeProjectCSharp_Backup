@@ -214,14 +214,6 @@ namespace CoffeeProjectCSharp
         {
             try
             {
-                // Kiểm tra có ID không
-                if (string.IsNullOrEmpty(txtID.Text))
-                {
-                    MessageBox.Show("Không tìm thấy ID tài khoản!");
-                    return;
-                }
-
-                int accountId = Convert.ToInt32(txtID.Text);
                 string username = txtUsername.Text.Trim();
                 string password = txtPassword.Text.Trim();
                 string role = cboRole.Text.Trim();
@@ -234,48 +226,50 @@ namespace CoffeeProjectCSharp
                     return;
                 }
 
-                ConfigDB db = new ConfigDB();
-                using (SqlConnection conn = db.GetConnection())
+                using (SqlConnection conn = new SqlConnection(ConfigDB.connectionString))
                 {
                     conn.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
 
-                    string query = @"UPDATE Account 
-                           SET Username = @Username, 
-                               Password = @Password, 
-                               Role = @Role,
-                               Ngaysinh = @Ngaysinh,
-                               Gioitinh = @Gioitinh
-                           WHERE Id = @ID";
+                    // THÊM
+                    if (Status == "Add")
+                    {
+                        cmd.CommandText = @"INSERT INTO Account
+                        (Username, Password, Role, Ngaysinh, Gioitinh)
+                        VALUES (@Username, @Password, @Role, @Ngaysinh, @Gioitinh)";
+                    }
+                    // SỬA
+                    else if (Status == "Edit")
+                    {
+                        int accountId = Convert.ToInt32(txtID.Text);
+                        cmd.CommandText = @"UPDATE Account 
+                        SET Username=@Username,
+                            Password=@Password,
+                            Role=@Role,
+                            Ngaysinh=@Ngaysinh,
+                            Gioitinh=@Gioitinh
+                        WHERE Id=@ID";
+                        cmd.Parameters.AddWithValue("@ID", accountId);
+                    }
 
-                    SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Username", username);
                     cmd.Parameters.AddWithValue("@Password", password);
                     cmd.Parameters.AddWithValue("@Role", role);
                     cmd.Parameters.AddWithValue("@Ngaysinh", ngaySinh);
                     cmd.Parameters.AddWithValue("@Gioitinh", gioiTinh);
-                    cmd.Parameters.AddWithValue("@ID", accountId); 
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Cập nhật thành công!", "Thành công",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        GetData();
-                        Status = "Reset";
-                        SetInterface(Status);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không tìm thấy tài khoản để cập nhật!");
-                    }
+                    cmd.ExecuteNonQuery();
                 }
+
+                MessageBox.Show("Lưu dữ liệu thành công!");
+                GetData();
+                Status = "Reset";
+                SetInterface(Status);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi cập nhật: " + ex.Message, "Lỗi",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 

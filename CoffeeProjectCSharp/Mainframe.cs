@@ -21,5 +21,19 @@ namespace CoffeeProjectCSharp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Account account = new Account();
+            account.Show();
+            this.Hide();
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            Account account = new Account();
+            account.Show();
+            this.Hide();
+        }
     }
 }

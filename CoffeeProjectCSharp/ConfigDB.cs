@@ -12,11 +12,12 @@ namespace CoffeeProjectCSharp
     public class ConfigDB
     {
 
-        private string connectionString =
+        public static string connectionString =
            "Data Source=DESKTOP-PUJN1BU\\SQLEXPRESS;" +
            "Initial Catalog=QuanlyCafe;" +
            "Integrated Security=True;" +
            "TrustServerCertificate=True;";
+
 
         public DataTable DangNhap(string username, string password)
         {
@@ -132,6 +133,11 @@ namespace CoffeeProjectCSharp
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+        }
+
+        public SqlConnection GetConnection()
+        {
+            return new SqlConnection(connectionString);
         }
     }
 }

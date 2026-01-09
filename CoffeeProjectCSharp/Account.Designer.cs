@@ -398,8 +398,6 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Location = new System.Drawing.Point(386, 224);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(271, 26);
@@ -416,7 +414,6 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(728, 182);
             this.label4.Name = "label4";
@@ -426,7 +423,6 @@
             // 
             // rdoMale
             // 
-            this.rdoMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rdoMale.AutoSize = true;
             this.rdoMale.Location = new System.Drawing.Point(811, 182);
             this.rdoMale.Name = "rdoMale";
@@ -438,7 +434,6 @@
             // 
             // rdoFemale
             // 
-            this.rdoFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rdoFemale.AutoSize = true;
             this.rdoFemale.Location = new System.Drawing.Point(884, 182);
             this.rdoFemale.Name = "rdoFemale";
@@ -466,8 +461,6 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Location = new System.Drawing.Point(386, 269);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(271, 26);

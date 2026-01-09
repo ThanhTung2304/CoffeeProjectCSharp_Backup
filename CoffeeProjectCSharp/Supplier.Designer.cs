@@ -65,7 +65,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cboStatus = new System.Windows.Forms.ComboBox();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SupplierID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SupplierName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +109,7 @@
             this.btnMain.TabIndex = 22;
             this.btnMain.Text = "Trang chủ";
             this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // panel1
             // 
@@ -229,6 +230,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "QUẢN LÝ TÀI KHOẢN";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtSearch
             // 
@@ -310,6 +312,7 @@
             this.btnThem.TabIndex = 36;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnHuy
             // 
@@ -319,6 +322,7 @@
             this.btnHuy.TabIndex = 37;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -328,6 +332,7 @@
             this.btnLuu.TabIndex = 38;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -337,6 +342,7 @@
             this.btnXoa.TabIndex = 39;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -346,6 +352,7 @@
             this.btnSua.TabIndex = 40;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // txtID
             // 
@@ -408,12 +415,16 @@
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Size = new System.Drawing.Size(157, 28);
             this.cboStatus.TabIndex = 51;
+            this.cboStatus.SelectedIndexChanged += new System.EventHandler(this.cboStatus_SelectedIndexChanged);
             // 
             // dgvSupplier
             // 
+            this.dgvSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
+            this.SupplierID,
             this.SupplierName,
             this.Phone,
             this.Email,
@@ -427,13 +438,13 @@
             this.dgvSupplier.Size = new System.Drawing.Size(836, 150);
             this.dgvSupplier.TabIndex = 52;
             // 
-            // ID
+            // SupplierID
             // 
-            this.ID.DataPropertyName = "SupplierID";
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.Width = 150;
+            this.SupplierID.DataPropertyName = "SupplierID";
+            this.SupplierID.HeaderText = "ID";
+            this.SupplierID.MinimumWidth = 8;
+            this.SupplierID.Name = "SupplierID";
+            this.SupplierID.Width = 150;
             // 
             // SupplierName
             // 
@@ -563,7 +574,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboStatus;
         private System.Windows.Forms.DataGridView dgvSupplier;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SupplierID;
         private System.Windows.Forms.DataGridViewTextBoxColumn SupplierName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;

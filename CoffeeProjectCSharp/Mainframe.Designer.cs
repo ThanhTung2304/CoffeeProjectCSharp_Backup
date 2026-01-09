@@ -140,8 +140,9 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(237, 38);
             this.button10.TabIndex = 10;
-            this.button10.Text = "ĐƠN HÀNG";
+            this.button10.Text = "NHÀ CUNG CẤP";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 

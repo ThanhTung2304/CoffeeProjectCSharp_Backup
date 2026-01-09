@@ -12,3 +12,4 @@ D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.e
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Mainframe.resources
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Register.resources
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Account.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Supplier.resources

@@ -288,5 +288,34 @@ namespace CoffeeProjectCSharp
                 }
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = txtSearch.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(keyword))
+            {
+                GetData();
+                return;
+            }
+
+            using (SqlConnection conn = new SqlConnection(ConfigDB.connectionString))
+            {
+                conn.Open();
+                string query = @"SELECT * FROM Supplier
+                         WHERE SupplierName LIKE @keyword
+                         OR Phone LIKE @keyword
+                         OR Email LIKE @keyword";
+
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                da.SelectCommand.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvSupplier.AutoGenerateColumns = true;
+                dgvSupplier.DataSource = dt;
+            }
+        }
     }
 }

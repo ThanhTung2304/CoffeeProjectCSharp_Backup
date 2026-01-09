@@ -26,9 +26,15 @@ namespace CoffeeProjectCSharp
         public Account()
         {
             InitializeComponent();
+
+            this.WindowState = FormWindowState.Maximized; // mở full màn hình
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+       
+
             SetInterface("Reset");
             GetData();
         }
+
 
         private void SetInterface(string status)
         {

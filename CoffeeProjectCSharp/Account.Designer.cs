@@ -73,6 +73,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,9 +93,10 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.btnBan);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button11);
@@ -108,7 +110,7 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(12, 148);
+            this.panel1.Location = new System.Drawing.Point(12, 156);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 933);
@@ -126,7 +128,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(3, 403);
+            this.button8.Location = new System.Drawing.Point(3, 390);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(237, 38);
@@ -136,17 +138,17 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(3, 494);
+            this.button11.Location = new System.Drawing.Point(4, 480);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(237, 38);
             this.button11.TabIndex = 11;
-            this.button11.Text = "THỐNG KÊ";
+            this.button11.Text = "MENU";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(4, 449);
+            this.button10.Location = new System.Drawing.Point(4, 522);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(237, 38);
@@ -157,7 +159,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 542);
+            this.button9.Location = new System.Drawing.Point(4, 564);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(237, 38);
@@ -167,7 +169,7 @@
             // 
             // btnCaLam
             // 
-            this.btnCaLam.Location = new System.Drawing.Point(4, 356);
+            this.btnCaLam.Location = new System.Drawing.Point(4, 348);
             this.btnCaLam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCaLam.Name = "btnCaLam";
             this.btnCaLam.Size = new System.Drawing.Size(237, 38);
@@ -177,7 +179,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(4, 312);
+            this.button7.Location = new System.Drawing.Point(4, 306);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(237, 38);
@@ -187,7 +189,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 266);
+            this.button5.Location = new System.Drawing.Point(3, 264);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(237, 38);
@@ -259,8 +261,8 @@
             // 
             // dgvAccount
             // 
-            this.dgvAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -538,13 +540,23 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::CoffeeProjectCSharp.Properties.Resources.ảnhcafe1;
-            this.pictureBox1.Location = new System.Drawing.Point(-10, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(274, 135);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(4, 434);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(237, 42);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "CÔNG THỨC PHA CHẾ";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // Account
             // 
@@ -633,5 +645,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBan;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button12;
     }
 }

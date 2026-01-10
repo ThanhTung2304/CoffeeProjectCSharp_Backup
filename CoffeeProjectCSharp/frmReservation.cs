@@ -172,9 +172,10 @@ namespace CoffeeProjectCSharp
             {
                 SqlDataAdapter da = new SqlDataAdapter(
                     @"SELECT d.Id, b.MaBan, d.TenKhach, d.SDT,
-                             d.ThoiGian, d.TrangThai, d.GhiChu
-                      FROM DatBan d JOIN Ban b ON d.IdBan=b.Id
-                      WHERE TenKhach LIKE @kw", conn);
+                        d.ThoiGian, d.TrangThai, d.GhiChu
+                        FROM DatBan d
+                        JOIN Ban b ON d.BanId = b.Id
+                        WHERE d.TenKhach LIKE @kw", conn);
 
                 da.SelectCommand.Parameters.AddWithValue(
                     "@kw", "%" + txtSearch.Text + "%");

@@ -45,6 +45,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBan = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -66,7 +67,8 @@
             this.btnExcel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnBan = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -221,6 +223,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.btnBan);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
@@ -233,18 +237,27 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(8, 152);
+            this.panel1.Location = new System.Drawing.Point(12, 156);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 527);
+            this.panel1.Size = new System.Drawing.Size(244, 621);
             this.panel1.TabIndex = 47;
+            // 
+            // btnBan
+            // 
+            this.btnBan.Location = new System.Drawing.Point(4, 134);
+            this.btnBan.Name = "btnBan";
+            this.btnBan.Size = new System.Drawing.Size(237, 38);
+            this.btnBan.TabIndex = 12;
+            this.btnBan.Text = "QUẢN LÝ BÀN";
+            this.btnBan.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(3, 438);
+            this.button11.Location = new System.Drawing.Point(3, 527);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(237, 38);
             this.button11.TabIndex = 11;
-            this.button11.Text = "THỐNG KÊ";
+            this.button11.Text = "NHÀ CUNG CẤP";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -253,12 +266,12 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(237, 38);
             this.button10.TabIndex = 10;
-            this.button10.Text = "ĐƠN HÀNG";
+            this.button10.Text = "QUẢN LÝ LỊCH LÀM";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 482);
+            this.button9.Location = new System.Drawing.Point(4, 571);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(237, 38);
             this.button9.TabIndex = 9;
@@ -271,7 +284,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(237, 38);
             this.button8.TabIndex = 8;
-            this.button8.Text = "QUẢN LÝ HÓA ĐƠN";
+            this.button8.Text = "QUẢN LÝ CA LÀM";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -395,9 +408,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CoffeeProjectCSharp.Properties.Resources.ảnhcafe1;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(244, 137);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
@@ -434,20 +447,29 @@
             this.comboBox1.Size = new System.Drawing.Size(177, 28);
             this.comboBox1.TabIndex = 75;
             // 
-            // btnBan
+            // button12
             // 
-            this.btnBan.Location = new System.Drawing.Point(4, 134);
-            this.btnBan.Name = "btnBan";
-            this.btnBan.Size = new System.Drawing.Size(237, 38);
-            this.btnBan.TabIndex = 12;
-            this.btnBan.Text = "QUẢN LÝ BÀN";
-            this.btnBan.UseVisualStyleBackColor = true;
+            this.button12.Location = new System.Drawing.Point(4, 439);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(237, 38);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "CÔNG THỨC PHA CHẾ";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(4, 483);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(237, 38);
+            this.button13.TabIndex = 14;
+            this.button13.Text = "MENU";
+            this.button13.UseVisualStyleBackColor = true;
             // 
             // frmReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1381, 712);
+            this.ClientSize = new System.Drawing.Size(1381, 763);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnExcel);
@@ -527,5 +549,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnBan;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
     }
 }

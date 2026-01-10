@@ -38,6 +38,7 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chbShowPassword = new System.Windows.Forms.CheckBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -109,6 +110,7 @@
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.chbShowPassword);
             this.panelMain.Controls.Add(this.linkLabel1);
             this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Controls.Add(this.btnLogin);
@@ -144,6 +146,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // chbShowPassword
+            // 
+            this.chbShowPassword.AutoSize = true;
+            this.chbShowPassword.Location = new System.Drawing.Point(862, 262);
+            this.chbShowPassword.Name = "chbShowPassword";
+            this.chbShowPassword.Size = new System.Drawing.Size(22, 21);
+            this.chbShowPassword.TabIndex = 9;
+            this.chbShowPassword.UseVisualStyleBackColor = true;
+            this.chbShowPassword.CheckedChanged += new System.EventHandler(this.chbShowPassword_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -171,6 +183,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox chbShowPassword;
     }
 }
 

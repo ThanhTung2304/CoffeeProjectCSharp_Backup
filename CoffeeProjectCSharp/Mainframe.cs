@@ -72,6 +72,11 @@ namespace CoffeeProjectCSharp
             };
 
             scheduleForm.Show();
+        }
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Supplier supplier = new Supplier();
+            supplier.Show();
             this.Hide();
         }
     }

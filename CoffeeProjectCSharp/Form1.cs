@@ -29,18 +29,18 @@ namespace CoffeeProjectCSharp
             panelMain.Left = (this.ClientSize.Width - panelMain.Width) / 2;
             panelMain.Top = (this.ClientSize.Height - panelMain.Height) / 2;
 
-            // Set thuộc tính cho TextBox Password
-            txtPassword.PasswordChar = '*';
-            txtPassword.MaxLength = 50;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // Kiểm tra kết nối database
+            txtPassword.UseSystemPasswordChar = true;
+            chbShowPassword.Checked = false;
+            txtPassword.MaxLength = 50;
+
             if (!DangNhap.TestConnection())
             {
-                MessageBox.Show("Không thể kết nối đến database!\nVui lòng kiểm tra lại cấu hình.",
+                MessageBox.Show("Không thể kết nối đến database!",
                     "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -92,6 +92,11 @@ namespace CoffeeProjectCSharp
             Register register = new Register();
             register.Show();
             this.Hide();
+        }
+
+        private void chbShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !chbShowPassword.Checked;
         }
     }
 }

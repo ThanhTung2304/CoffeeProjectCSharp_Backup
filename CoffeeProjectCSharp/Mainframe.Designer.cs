@@ -112,6 +112,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.btnLichLam);
             this.panel1.Controls.Add(this.btnThongKe);
@@ -149,13 +152,15 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(211, 30);
             this.button10.TabIndex = 10;
-            this.button10.Text = "ĐƠN HÀNG";
+            this.button10.Text = "NHÀ CUNG CẤP";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 396);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button9.Location = new System.Drawing.Point(3, 443);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(211, 30);
             this.button9.TabIndex = 9;
@@ -185,6 +190,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -196,6 +202,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::CoffeeProjectCSharp.Properties.Resources.ảnhcafe1;
             this.pictureBox1.Location = new System.Drawing.Point(233, 75);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

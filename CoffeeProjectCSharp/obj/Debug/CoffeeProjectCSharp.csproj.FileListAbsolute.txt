@@ -12,6 +12,7 @@ D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.e
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Mainframe.resources
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Register.resources
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Account.resources
+<<<<<<< HEAD
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.exe.config
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.exe
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\CoffeeProjectCSharp.pdb
@@ -55,3 +56,7 @@ C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\bin\Debug\Sy
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeePr.40B2749C.Up2Date
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.ShiftForm.resources
 C:\Users\nguye\Source\Repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.EmployeeShiftForm.resources
+=======
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Supplier.resources
+>>>>>>> Supplier
+C:\Users\nguye\source\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Supplier.resources

@@ -36,9 +36,9 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.chbShowPassword = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.chbShowPassword = new System.Windows.Forms.CheckBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +125,16 @@
             this.panelMain.Size = new System.Drawing.Size(906, 524);
             this.panelMain.TabIndex = 8;
             // 
+            // chbShowPassword
+            // 
+            this.chbShowPassword.AutoSize = true;
+            this.chbShowPassword.Location = new System.Drawing.Point(862, 262);
+            this.chbShowPassword.Name = "chbShowPassword";
+            this.chbShowPassword.Size = new System.Drawing.Size(22, 21);
+            this.chbShowPassword.TabIndex = 9;
+            this.chbShowPassword.UseVisualStyleBackColor = true;
+            this.chbShowPassword.CheckedChanged += new System.EventHandler(this.chbShowPassword_CheckedChanged);
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -138,23 +148,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CoffeeProjectCSharp.Properties.Resources.ảnhcafe;
+            this.pictureBox1.Image = global::CoffeeProjectCSharp.Properties.Resources.ảnhcafe1;
             this.pictureBox1.Location = new System.Drawing.Point(38, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(395, 383);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // chbShowPassword
-            // 
-            this.chbShowPassword.AutoSize = true;
-            this.chbShowPassword.Location = new System.Drawing.Point(862, 262);
-            this.chbShowPassword.Name = "chbShowPassword";
-            this.chbShowPassword.Size = new System.Drawing.Size(22, 21);
-            this.chbShowPassword.TabIndex = 9;
-            this.chbShowPassword.UseVisualStyleBackColor = true;
-            this.chbShowPassword.CheckedChanged += new System.EventHandler(this.chbShowPassword_CheckedChanged);
             // 
             // Form1
             // 

@@ -1,0 +1,5 @@
+/.vs/*
+/CoffeeProjectCSharp/.vs/*
+/CoffeeProjectCSharp/bin/*
+/CoffeeProjectCSharp/obj/*
+/packages/*

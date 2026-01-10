@@ -35,5 +35,26 @@ namespace CoffeeProjectCSharp
             account.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmReservation frm = new frmReservation();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnVoucher_Click(object sender, EventArgs e)
+        {
+            Voucher voucher = new Voucher();
+            voucher.Show();
+            this.Hide();
+        }
+
+        private void btnBan_Click(object sender, EventArgs e)
+        {
+            QLBan qLBan = new QLBan();
+            qLBan.Show();
+            this.Hide();
+        }
     }
 }

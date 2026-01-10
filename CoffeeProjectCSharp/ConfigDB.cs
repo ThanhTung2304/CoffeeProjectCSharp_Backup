@@ -13,10 +13,7 @@ namespace CoffeeProjectCSharp
     {
 
         public static string connectionString =
-           "Data Source=DESKTOP-PUJN1BU\\SQLEXPRESS;" +
-           "Initial Catalog=QuanlyCafe;" +
-           "Integrated Security=True;" +
-           "TrustServerCertificate=True;";
+           "Data Source=TRANG-PC;Initial Catalog=QuanlyCafe;Integrated Security=True;TrustServerCertificate=True";
 
 
         public DataTable DangNhap(string username, string password)

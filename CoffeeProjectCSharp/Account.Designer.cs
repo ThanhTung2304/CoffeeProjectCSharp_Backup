@@ -71,6 +71,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnBan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
@@ -100,6 +101,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.btnBan);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button9);
@@ -113,12 +115,12 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(12, 147);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 491);
+            this.panel1.Size = new System.Drawing.Size(244, 533);
             this.panel1.TabIndex = 20;
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(3, 399);
+            this.button11.Location = new System.Drawing.Point(3, 445);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(237, 38);
             this.button11.TabIndex = 11;
@@ -127,7 +129,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(4, 355);
+            this.button10.Location = new System.Drawing.Point(4, 401);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(237, 38);
             this.button10.TabIndex = 10;
@@ -136,7 +138,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(3, 443);
+            this.button9.Location = new System.Drawing.Point(3, 486);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(237, 38);
             this.button9.TabIndex = 9;
@@ -145,7 +147,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(4, 311);
+            this.button8.Location = new System.Drawing.Point(4, 359);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(237, 38);
             this.button8.TabIndex = 8;
@@ -154,7 +156,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(4, 267);
+            this.button7.Location = new System.Drawing.Point(4, 315);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(237, 38);
             this.button7.TabIndex = 7;
@@ -163,7 +165,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(3, 223);
+            this.button5.Location = new System.Drawing.Point(3, 271);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(237, 38);
             this.button5.TabIndex = 4;
@@ -172,7 +174,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(4, 179);
+            this.button6.Location = new System.Drawing.Point(4, 227);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(237, 38);
             this.button6.TabIndex = 6;
@@ -181,7 +183,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(4, 135);
+            this.button4.Location = new System.Drawing.Point(4, 181);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(237, 38);
             this.button4.TabIndex = 3;
@@ -482,11 +484,20 @@
             this.label6.TabIndex = 44;
             this.label6.Text = "ID";
             // 
+            // btnBan
+            // 
+            this.btnBan.Location = new System.Drawing.Point(3, 135);
+            this.btnBan.Name = "btnBan";
+            this.btnBan.Size = new System.Drawing.Size(237, 38);
+            this.btnBan.TabIndex = 12;
+            this.btnBan.Text = "QUẢN LÝ BÀN";
+            this.btnBan.UseVisualStyleBackColor = true;
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 650);
+            this.ClientSize = new System.Drawing.Size(1440, 709);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtPassword);
@@ -566,5 +577,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Active;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBan;
     }
 }

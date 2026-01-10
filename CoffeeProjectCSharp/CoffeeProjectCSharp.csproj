@@ -59,6 +59,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mainframe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,17 +73,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLBan.Designer.cs">
+      <DependentUpon>QLBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voucher.Designer.cs">
+      <DependentUpon>Voucher.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainframe.resx">
       <DependentUpon>Mainframe.cs</DependentUpon>
@@ -92,8 +113,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QLBan.resx">
+      <DependentUpon>QLBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voucher.resx">
+      <DependentUpon>Voucher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

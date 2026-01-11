@@ -115,11 +115,23 @@
     <Compile Include="frmReservation.Designer.cs">
       <DependentUpon>frmReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mainframe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mainframe.Designer.cs">
       <DependentUpon>Mainframe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +140,18 @@
     </Compile>
     <Compile Include="QLBan.Designer.cs">
       <DependentUpon>QLBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipe.Designer.cs">
+      <DependentUpon>Recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeItemForm.Designer.cs">
+      <DependentUpon>RecipeItemForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -168,8 +192,14 @@
     <EmbeddedResource Include="frmReservation.resx">
       <DependentUpon>frmReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mainframe.resx">
       <DependentUpon>Mainframe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -183,6 +213,12 @@
     </Compile>
     <EmbeddedResource Include="QLBan.resx">
       <DependentUpon>QLBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipe.resx">
+      <DependentUpon>Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeItemForm.resx">
+      <DependentUpon>RecipeItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

@@ -108,5 +108,26 @@ namespace CoffeeProjectCSharp
             qLBan.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Product product = new Product();
+            product.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Recipe recipe = new Recipe();
+            recipe.Show();
+            this.Hide();
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,9 @@ namespace CoffeeProjectCSharp
     {
         ConfigDB DangNhap = new ConfigDB();
 
+        public static string CurrentUsername = "";
+        public static string CurrentRole = ""; 
+     
 
         public Form1()
         {
@@ -33,16 +37,8 @@ namespace CoffeeProjectCSharp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Kiểm tra kết nối database
-            txtPassword.UseSystemPasswordChar = true;
+            txtPassword.PasswordChar = '●';
             chbShowPassword.Checked = false;
-            txtPassword.MaxLength = 50;
-
-            if (!DangNhap.TestConnection())
-            {
-                MessageBox.Show("Không thể kết nối đến database!",
-                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
 
@@ -61,21 +57,34 @@ namespace CoffeeProjectCSharp
             }
 
             // Đăng nhập
-            ConfigDB configDB = new ConfigDB(); // Tạo đối tượng
-            DataTable dt = configDB.DangNhap(username, password); // ĐÚNG - Gọi qua đối tượng
+            ConfigDB configDB = new ConfigDB();
+            DataTable dt = configDB.DangNhap(username, password);
 
             if (dt != null && dt.Rows.Count > 0)
             {
-               
-                string role = dt.Rows[0]["Role"].ToString();
+                // LƯU THÔNG TIN USER
+                DataRow row = dt.Rows[0];
+                CurrentUsername = row["Username"].ToString();
+                CurrentRole = row["Role"].ToString();
 
-                MessageBox.Show($"Đăng nhập thành công!\nXin chào: {role}",
+                // Hỏi lưu mật khẩu
+                DialogResult result = MessageBox.Show(
+                    "Đăng nhập thành công!\nBạn có muốn lưu mật khẩu không?",
+                    "Lưu mật khẩu",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (result == DialogResult.Yes)
+                {
+                    LuuMatKhau(username, password);
+                }
+
+                MessageBox.Show($"Xin chào: {CurrentUsername}\nChức vụ: {CurrentRole}",
                     "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
 
                 Mainframe mainframe = new Mainframe();
                 mainframe.Show();
-                // Đóng form đăng nhập
                 this.Hide();
             }
             else
@@ -84,6 +93,50 @@ namespace CoffeeProjectCSharp
                     "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Clear();
                 txtUsername.Focus();
+            }
+        }
+
+        //Lưu mật khẩu vào file text
+        private void LuuMatKhau(string username, string password)
+        {
+            try
+            {
+                string filePath = "accounts.txt";
+
+                // Kiểm tra xem tài khoản đã tồn tại chưa
+                if (File.Exists(filePath))
+                {
+                    string[] lines = File.ReadAllLines(filePath);
+                    bool daTonTai = false;
+
+                    foreach (string line in lines)
+                    {
+                        if (line.StartsWith(username + "|"))
+                        {
+                            daTonTai = true;
+                            break;
+                        }
+                    }
+
+                    if (daTonTai)
+                    {
+                        MessageBox.Show("Tài khoản này đã được lưu trước đó!",
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                }
+
+                // Lưu tài khoản mới
+                string data = $"{username}|{password}\n";
+                File.AppendAllText(filePath, data);
+
+                MessageBox.Show("Đã lưu mật khẩu thành công!",
+                    "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu: " + ex.Message,
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -96,7 +149,14 @@ namespace CoffeeProjectCSharp
 
         private void chbShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            txtPassword.UseSystemPasswordChar = !chbShowPassword.Checked;
+            if (chbShowPassword.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '●'; 
+            }
         }
     }
 }

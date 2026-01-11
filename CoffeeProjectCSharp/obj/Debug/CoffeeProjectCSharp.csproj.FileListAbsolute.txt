@@ -92,3 +92,7 @@ D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.c
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeePr.40B2749C.Up2Date
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.exe
 D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.pdb
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Inventory.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Product.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.Recipe.resources
+D:\repos\CoffeeProjectCSharp\CoffeeProjectCSharp\obj\Debug\CoffeeProjectCSharp.RecipeItemForm.resources

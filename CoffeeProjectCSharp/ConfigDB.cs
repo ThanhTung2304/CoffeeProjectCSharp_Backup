@@ -15,7 +15,7 @@ namespace CoffeeProjectCSharp
     {
 
         public static string connectionString =
-           "Data Source=DESKTOP-1BS239I\\SQLEXPRESS;" +
+           "Data Source=DESKTOP-PUJN1BU\\SQLEXPRESS;" +
            "Initial Catalog = QuanlyCafe;" +
             "Integrated Security = True;" +
             "TrustServerCertificate=True";

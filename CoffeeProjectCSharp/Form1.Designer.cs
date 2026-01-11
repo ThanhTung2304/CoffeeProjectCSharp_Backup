@@ -100,7 +100,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(594, 324);
+            this.btnLogin.Location = new System.Drawing.Point(594, 340);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(122, 34);
             this.btnLogin.TabIndex = 7;
@@ -128,6 +128,8 @@
             // chbShowPassword
             // 
             this.chbShowPassword.AutoSize = true;
+            this.chbShowPassword.Checked = true;
+            this.chbShowPassword.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbShowPassword.Location = new System.Drawing.Point(862, 262);
             this.chbShowPassword.Name = "chbShowPassword";
             this.chbShowPassword.Size = new System.Drawing.Size(22, 21);

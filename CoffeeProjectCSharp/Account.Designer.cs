@@ -30,6 +30,7 @@
         {
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button12 = new System.Windows.Forms.Button();
             this.btnBan = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -73,7 +74,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,6 +115,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(244, 933);
             this.panel1.TabIndex = 20;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(4, 434);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(237, 42);
+            this.button12.TabIndex = 13;
+            this.button12.Text = "CÔNG THỨC PHA CHẾ";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // btnBan
             // 
@@ -406,9 +416,9 @@
             // 
             this.cboRole.FormattingEnabled = true;
             this.cboRole.Items.AddRange(new object[] {
-            "ADMIN",
-            "USER",
-            "STAFF"});
+            "Quản lý",
+            "Nhân viên",
+            "Khách hàng"});
             this.cboRole.Location = new System.Drawing.Point(811, 224);
             this.cboRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboRole.Name = "cboRole";
@@ -547,16 +557,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(4, 434);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(237, 42);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "CÔNG THỨC PHA CHẾ";
-            this.button12.UseVisualStyleBackColor = true;
             // 
             // Account
             // 

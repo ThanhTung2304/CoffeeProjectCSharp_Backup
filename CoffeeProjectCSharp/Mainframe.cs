@@ -17,10 +17,42 @@ namespace CoffeeProjectCSharp
             InitializeComponent();
         }
 
+
+
+        private void Mainframe_Load(object sender, EventArgs e)
+        {
+
+            MessageBox.Show($"Username: {Form1.CurrentUsername}\nRole: [{Form1.CurrentRole}]\nLength: {Form1.CurrentRole.Length}",
+        "Debug Info");
+
+            // PHÂN QUYỀN
+            PhanQuyen();
+        }
+
+        private void PhanQuyen()
+        {
+            string role = Form1.CurrentRole.Trim();
+
+            if (role == "Admin")
+            {
+                // Admin thấy tất cả
+                button1.Visible = true;      // Quản lý tài khoản
+                button10.Visible = true;      // Nhà cung cấp
+            }
+            else if (role == "Nhân viên")
+            {
+                // Ẩn các chức năng quản lý
+                button1.Visible = false;     // Quản lý tài khoản
+                button10.Visible = false;     // Nhà cung cấp
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
 
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -127,6 +159,13 @@ namespace CoffeeProjectCSharp
         {
             Recipe recipe = new Recipe();
             recipe.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
             this.Hide();
         }
     }
